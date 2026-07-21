@@ -1,6 +1,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@headless-ng/core": ["./dist/headless-ng/core"]
+    },
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -16,5 +19,13 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true
-  }
+  },
+  "references": [
+    {
+      "path": "./projects/headless-ng/core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/headless-ng/core/tsconfig.spec.json"
+    }
+  ]
 }
