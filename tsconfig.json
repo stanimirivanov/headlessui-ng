@@ -1,5 +1,9 @@
 {
   "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {}
+  },
+  "include": ["eslint.config.ts", "vitest.config.ts"],
   "files": [],
   "references": [
     { "path": "./projects/core/tsconfig.lib.json" },
